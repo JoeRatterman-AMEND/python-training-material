@@ -19,3 +19,16 @@ This document draws consolidates information from various other published style 
 This is to serve as a **guideline**. Do not waste excess time to conform to standards but do your best to use them as described in this document from the begining of a project.
 
 # Code Layout
+
+- Maximum line length is **80 symbols**
+- Use blank lines sparingly
+- Use '-' or '=' to break between sections of code
+- All operators should have spaces on both sides (=, +, -, <-, etc.)
+
+```r
+# good
+total_inches <- (total_feet / 12)
+
+# bad
+total_inches <-(total_feet/12)
+```
