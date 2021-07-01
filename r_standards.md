@@ -5,7 +5,7 @@ Initial Creator: [Joe Ratterman](https://github.com/JoeRatterman-AMEND)
 1. [Introduction](#introduction)
 2. [Code Layout](#code-layout)
 3. [Naming Conventions](#naming-conventions)
-4. [Imports](#imports)
+4. [Loading & Installing Packages](#imports)
 5. [Comments](#comments)
 6. [Security](#security)
 7. [Linters](#linters)
@@ -129,3 +129,29 @@ my_function(a = "this is a long & complex value", b = "this is a second long & c
 Note that the comma separating arguments should appear at the end of each line **Not** the beginning of the new line.
 
 # Naming Conventions
+
+Dataframes, variables, and function names should always be lowercase using ```_``` as needed. Names should be as short as possible, while still being understandable. A few examples are below. 
+
+**Do Nots:**
+- CamelCase
+- Multiple words without a ```_``` to separate should not be used
+- Start name with a number
+- Capital letters
+
+```r
+# good
+boxscore_df # Dataframe
+total_points # Variable
+avg_points # Variable
+calc_total_points # Function
+
+# bad
+BoxscoreDF # Dataframe
+2020Boxscore_df # Dataframe
+MYVARIABLENAME # Variable
+Total_Points # Variable
+AvgPoints # Variable
+really_complex_function_with_long_name # Function
+```
+
+# Loading & Installing Packages
