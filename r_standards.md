@@ -55,7 +55,7 @@ for(i in 1:length(obj)){
 } 
 ```
 
-- When using an opening bracket ```{```, it should be the last character the line
+- When using an opening bracket ```{```, it should be the last character in the line:
 ```r
 # good
 for (i in 1:length(obj)) {
@@ -65,6 +65,40 @@ for (i in 1:length(obj)) {
 # bad
 for(i in 1:length(obj)){action(x)} 
 ```
+
+- When using a closing bracket ```}```, it should be the first character in the line. It should also align with the function that opened the brace: 
+```r
+# good
+for (i in 1:length(obj)) {
+  
+  if (i < 5) {
+  
+    # do this
+    
+    } else {
+     
+     # do that
+    
+    }
+
+} 
+
+# bad
+for (i in 1:length(obj)) {
+  
+  if (i < 5) {
+  
+    # do this
+    
+} else {
+     
+     
+    
+ # do that   }
+
+  } 
+```
+
 
 - Add extra rows when it makes code more readable
 ```r
@@ -77,3 +111,21 @@ my_list = c('this is a really long string',
 # bad
 my_list = c('this is a really long string', 'this is another really long string', 'this is a third really really long string')
 ```
+
+- When calling a function with several arguments, use multiple lines as needed for readability
+```r
+# good
+my_function(
+  a = "this is a long & complex value", 
+  b = "this is a second long & complex value", 
+  c = "this is a final long & complex value"
+)
+
+# bad
+my_function(a = "this is a long & complex value", b = "this is a second long & complex value", 
+  c = "this is a final long & complex value"
+)
+```
+Note that the comma separating arguments should appear at the end of each line **Not** the beginning of the new line.
+
+# Naming Conventions
