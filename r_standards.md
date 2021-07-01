@@ -155,3 +155,10 @@ really_complex_function_with_long_name # Function
 ```
 
 # Loading & Installing Packages
+There are two primary functions that are used to load packages in R: ```library()``` and ```require()```. The only practical difference is that ```library``` will return an error if a package is not installed, while ```require``` only returns a warning message. While both will work, ```library()``` is preferred as it will stop a script before trying to run a function from the loaded package. 
+
+Installing packages should always be completed in the Console or Command Prompt with ```install.packages()```. **Never** install a package in a script, as it can lead to issues with package versions. 
+
+# Comments
+
+# Security
