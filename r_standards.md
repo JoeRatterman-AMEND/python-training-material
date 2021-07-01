@@ -32,3 +32,48 @@ total_inches <- (total_feet / 12)
 # bad
 total_inches <-(total_feet/12)
 ```
+- Spacing should not be used before or after an opening parenthesis
+
+```r
+# good
+my_function(var_1, var_2)
+
+# bad
+my_function (var_1, var_2)
+my_function( var_1, var_2)
+```
+- Add a space around the criteria call in ```for```, ```while```, ```if```:
+```r
+# good
+for (i in 1:length(obj)) {
+  action(x)
+} 
+
+# bad
+for(i in 1:length(obj)){
+  action(x)
+} 
+```
+
+- When using an opening bracket ```{```, it should be the last character the line
+```r
+# good
+for (i in 1:length(obj)) {
+  action(x)
+} 
+
+# bad
+for(i in 1:length(obj)){action(x)} 
+```
+
+- Add extra rows when it makes code more readable
+```r
+# good
+my_list = c('this is a really long string',
+            'this is another really long string', 
+            'this is a third really really long string'
+            )
+
+# bad
+my_list = c('this is a really long string', 'this is another really long string', 'this is a third really really long string')
+```
