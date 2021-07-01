@@ -160,5 +160,20 @@ There are two primary functions that are used to load packages in R: ```library(
 Installing packages should always be completed in the Console or Command Prompt with ```install.packages()```. **Never** install a package in a script, as it can lead to issues with package versions. 
 
 # Comments
+Comments should be concise and used as needed. Use comments to explain the 'why' of the code, not the 'what'.
+
+**General Guidelines**
+- If the code needs comments to clarify its work, you should consider refactoring or rewriting it. "The best comments to code are the code itself"
+- Make sure comments are updated as code is changed
+- Use complete sentences
+- Comments still follow the same style rules as the rest of the code. If a comment exceeds the maximum number of characters, use a comment block instead
+- Begin comments with a single ```#``` followed by a space: 
+```r
+# good comment
+
+#this is a bad comment
+
+# this is a bad comment even though I have added the space this is still a run-on sentence and it is going to be over the recommended 80 character limit so it would need a lot of work to fix it.
+```
 
 # Security
