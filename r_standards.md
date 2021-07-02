@@ -4,10 +4,11 @@ Initial Creator: [Joe Ratterman](https://github.com/JoeRatterman-AMEND)
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Code Layout](#code-layout)
-3. [Naming Conventions](#naming-conventions)
-4. [Loading & Installing Packages](#imports)
-5. [Comments](#comments)
-6. [Security](#security)
+3. [Pipes](#pipes)
+4. [Naming Conventions](#naming-conventions)
+5. [Loading and Installing Packages](#imports)
+6. [Comments](#comments)
+7. [Security](#security)
 
 # Introduction
 This document serves to provide coding conventions for R.
@@ -126,6 +127,34 @@ my_function(a = "this is a long & complex value", b = "this is a second long & c
 ```
 Note that the comma separating arguments should appear at the end of each line **Not** the beginning of the new line.
 
+# Pipes
+
+Pipes ```%>%``` are extremely useful, however, they can make code difficult to read & understand if not used correctly. Below are examples of a few common pitfalls. 
+
+- Pipes should appear at the end of a line of code - never in the middle or beginning. 
+```r
+# good
+dataset %>%
+  mutate(Column_C = Column_A + Column_B) %>%
+  arrange(Column_C) 
+
+# bad
+dataset %>% mutate(Column_C = Column_A + Column_B) %>% arrange(Column_C) 
+```
+
+- Follow standard line spacing practice for long lines of code. 
+```r
+# good
+dataset %>%
+  mutate(
+    Column_C = Column_A + Column_B,
+    Column_D = Column_C * Column_A, 
+    ColumnE = Column_C * Column_A * Column_B) 
+
+# bad
+dataset %>%
+  mutate(Column_C = Column_A + Column_B, Column_D = Column_C * Column_A, ColumnE = Column_C * Column_A * Column_B) 
+```
 # Naming Conventions
 
 Dataframes, variables, and function names should always be lowercase using ```_``` as needed. Names should be as short as possible, while still being understandable. A few examples are below. 
@@ -152,7 +181,7 @@ AvgPoints # Variable
 really_complex_function_with_long_name # Function
 ```
 
-# Loading & Installing Packages
+# Loading and Installing Packages
 There are two primary functions that are used to load packages in R: ```library()``` and ```require()```. The only practical difference is that ```library``` will return an error if a package is not installed, while ```require``` only returns a warning message. While both will work, ```library()``` is preferred as it will stop a script before trying to run a function from the loaded package. 
 
 Installing packages should always be completed in the Console or Command Prompt with ```install.packages()```. **Never** install a package in a script, as it can lead to issues with package versions. 
