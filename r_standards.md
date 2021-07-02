@@ -8,8 +8,6 @@ Initial Creator: [Joe Ratterman](https://github.com/JoeRatterman-AMEND)
 4. [Loading & Installing Packages](#imports)
 5. [Comments](#comments)
 6. [Security](#security)
-7. [Linters](#linters)
-8. [Doughnuts](#doughnuts)
 
 # Introduction
 This document serves to provide coding conventions for R.
