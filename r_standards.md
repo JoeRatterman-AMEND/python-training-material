@@ -177,3 +177,27 @@ Comments should be concise and used as needed. Use comments to explain the 'why'
 ```
 
 # Security
+To avoid security breaches, we will be using the package keyring. Keyring is used to save passwords in a computer's credential store. After setting a password once, it can be retrieved. This way, passwords do not need to be saved in a script - reducing the risk of them being seen by outsiders. 
+
+To set a password: 
+```r
+# Load keyring
+library(keyring)
+
+# Set password
+key_set_with_value(
+  service = "domain", 
+  username = "your_address@example.com",
+  password = "password_string"
+)
+
+# Retrieve password
+key_get("user_email", "your_address@example.com")
+
+```
+
+- ```domain``` is the client name (for code belonging to the logan-rollchocks repo, ```domain = 'logan'```. for bw-elt-meltanodbt, ```domain = 'bw'```)
+- keyring works by storing the ```password_string``` with a combination of ```domain``` and ```username``` on your os. This means two important things:
+- The ```key_get()``` function will only work on your computer or a computer where the ```key_set_with_value()``` function has already been done
+- Once the ```key_set_with_value()``` function has been called, ```key_get()``` can be called on ANY python script run on your computer
+- **NEVER** push code with a plain string password to GitHub
