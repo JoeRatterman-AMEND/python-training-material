@@ -6,7 +6,7 @@ Initial Creator: [Joe Ratterman](https://github.com/JoeRatterman-AMEND)
 2. [Code Layout](#code-layout)
 3. [Pipes](#pipes)
 4. [Naming Conventions](#naming-conventions)
-5. [Loading Packages](#imports)
+5. [Loading Packages](#import)
 6. [Comments](#comments)
 7. [Security](#security)
 
