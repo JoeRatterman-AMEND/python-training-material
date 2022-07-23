@@ -9,10 +9,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">python-training-material</h3>
 
   <p align="center">
-    project_description
+    I'll complete the ReadME soon... I promise!
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
