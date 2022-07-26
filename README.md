@@ -7,7 +7,7 @@
 <div align="center">
 
   <a href="https://github.com/JoeRatterman-AMEND/training-material">
-    <img src="notebooks/support-docs/logo.png" alt="Logo" width="80" height="80">
+    <img src="/notebooks/support-docs/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">python-training-material</h3>
