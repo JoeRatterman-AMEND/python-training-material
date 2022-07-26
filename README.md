@@ -13,6 +13,12 @@
 
   <p align="center">
     I'll complete the ReadME soon... I promise!
+
+    To Do List: <br>
+    - melting data in python
+    - bookmarked tweet
+    - add list manipulation & dictionary manipulation
+    
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -32,7 +38,6 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -42,7 +47,6 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#configuration">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -54,26 +58,11 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://www.python.org/)
+* [Jupyter](https://jupyter.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -108,21 +97,6 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Configuration
-
-If your codebase uses the config.yaml file use this space to illustrate what fields need to be present and what data they need to be populated with. This is also a great location to have an example config input:
-
-Example of config.yaml below:
-```yaml
-example-parameter: true
-example-list:
-  item-1: 1
-  item-2: "two"
-  item-3: 'image/url.com'
-example-empty:
-  ```
-  
-  <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -132,7 +106,6 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -150,21 +123,15 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 <!-- CONTACT -->
 ## Contact
 
-Your Name - email@email_client.com
+Your Name - ratterman@amendllc.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+GitHub Profile Link: [https://github.com/JoeRatterman-AMEND](https://github.com/JoeRatterman-AMEND)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-url]: https://github.com/github_username/repo_name/issues
-[product-screenshot]: images/screenshot.png
-[company-logo]: images/logo.png
+
+<a href="https://www.flaticon.com/free-icons/technology" title="technology icons">Technology icons created by Eucalyp - Flaticon</a>
