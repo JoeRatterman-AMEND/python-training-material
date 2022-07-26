@@ -14,7 +14,7 @@
   <p align="center">
     I'll complete the ReadME soon... I promise!
 
-    To Do List: <br>
+    To Do List:
     - melting data in python
     - bookmarked tweet
     - add list manipulation & dictionary manipulation
