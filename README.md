@@ -14,11 +14,7 @@
   <p align="center">
     I'll complete the ReadME soon... I promise!
 
-    To Do List:
-    - melting data in python
-    - bookmarked tweet
-    - add list manipulation & dictionary manipulation
-    
+
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
